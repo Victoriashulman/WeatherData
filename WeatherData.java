@@ -2,10 +2,11 @@ import java.util.ArrayList;
 public class WeatherData
 {
     private ArrayList<Double> temperatures;
-
-    public void rayList<Double> t)
+    
+    publicvWeatherdata (ArrayList<Double> temps)
     {
-        temperatures = t;
+        temperatures = temps;
+        
         
     }
     public String toString()
