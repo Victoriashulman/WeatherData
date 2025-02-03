@@ -11,7 +11,12 @@ public class Main
         WeatherData w = new WeatherData(t);
         w.cleanData(85.0, 120.0);
         System.out.println(w);
-
+        t.add(1,121.0);
+        System.out.println(w);
+        t.add(1, 84.0);
+        System.out.println(w);
+        w.cleanData(85.0, 120.0);
+        System.out.println(w);
     }
     
 }
