@@ -10,6 +10,7 @@ public class Main
         for(double n : temps) t.add(n);
         WeatherData w = new WeatherData(t);
         w.cleanData(85.0, 120.0);
+        System.out.println(w);
 
     }
     
