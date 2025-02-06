@@ -12,20 +12,18 @@ public class WeatherData
     public String toString()
     {
         return temperatures.toString();
-
     }
     /** Guaranteed not to be null and to contain only non-null entries */
     
     
 
-    public void cleanData(double lower, double upper)
-    {
-    for(int i = 0; i < temperatures.size(); i++){
-        double temp = temperatures.get(i);
-        if (temp < lower || temp > upper) 
-        temperatures.remove(i);
-        i--;
-    }}
+    public void cleanData(double lower, double upper){
+    for(int i = 0; i < temperatures.size(); i++){ 
+    double temp = temperatures.get(i);
+     if (temp < lower || temp > upper){ 
+    temperatures.remove(i);}
+    i--;}} 
+    
 
         
     /**
@@ -33,7 +31,7 @@ public class WeatherData
     * part (b)
     * Precondition: There is at least one heat wave in temperatures based on threshold.
     */
-   public int longestHeatWave(double threshold)
+   public int longestHeatWave(double threshold){
    int heatWave = 0;
    int max = 0;
    for (double t : temperatures){
@@ -41,8 +39,8 @@ public class WeatherData
    heatWave ++;}
    if (heatWave > max) max = heatWave;
    else heatWave = 0;
-   return max;
-    { /* to be implemented in part (b) */ }
+   return max;}}
+     /* to be implemented in part (b) */ 
     
     // There may be instance variables, constructors, and methods that are not shown.
-    }}
+    
