@@ -18,11 +18,14 @@ public class WeatherData
     
 
     public void cleanData(double lower, double upper){
-    for(int i = 0; i < temperatures.size(); i++); 
-    double temp = temperatures.get(i);
-     if (temp < lower || temp > upper)
-    temperatures.remove(i);
-    i--;} 
+        for(int i = 0; i < temperatures.size(); i++) {
+            double temp = temperatures.get(i);
+            if (temp < lower || temp > upper){
+                temperatures.remove(i);
+                i--; 
+            }
+        }
+    }
     
 
         
@@ -39,7 +42,7 @@ public class WeatherData
    heatWave ++;}
    if (heatWave > max) max = heatWave;
    else heatWave = 0;
-   return max;}}
+   return max/2;}}
      /* to be implemented in part (b) */ 
     
     // There may be instance variables, constructors, and methods that are not shown.
